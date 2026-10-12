@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Liberty Star Eye & Ear Drugs Business Limited</title>
+  <meta name="description" content="Liberty Star Eye & Ear Drugs Business Limited — trusted pharmacy for eye and ear medication and care." />
+  <meta name="theme-color" content="#0b6b8f" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo-placeholder.png" alt="Liberty Star Eye & Ear Drugs logo" class="logo" />
+        <div class="brand-text">
+          <h1>Liberty Star Eye & Ear Drugs</h1>
+          <small>Business Limited</small>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#services">Products & Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#shop" class="btn">Shop</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-content">
+        <h2 id="hero-heading">Trusted eye & ear medicines and care</h2>
+        <p>Quality pharmacy services, prescription fulfilment, and professional advice for eye and ear health.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Contact Us</a>
+          <a class="btn" href="#services">Our Products</a>
+          <a class="btn" href="#shop">Order Online</a>
+        </div>
+        <div class="quick-info">
+          <span>Phone: <a href="tel:+2348030955346">+234 803 095 5346</a></span>
+          <span>Open: Mon–Sat 9:00–18:00</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <h3 id="about-heading">About Liberty Star</h3>
+        <p>Liberty Star Eye & Ear Drugs Business Limited provides specialised medications and products for ophthalmic and otologic care. Our trained staff ensure safe dispensing, patient counselling, and product recommendations tailored to your needs.</p>
+        <ul>
+          <li>Prescription medications</li>
+          <li>Over-the-counter treatments for eye & ear conditions</li>
+          <li>Professional advice & counselling</li>
+          <li>Safe storage and handling of specialty products</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <h3 id="services-heading">Products & Services</h3>
+        <p>Below is a sample listing — I’ll replace this with your actual product catalogue and images when you provide them.</p>
+
+        <div class="grid products-grid" role="list">
+          <article class="product-card" role="listitem">
+            <img src="product-placeholder.jpg" alt="Eye drop bottle" />
+            <h4>Antibiotic Eye Drops</h4>
+            <p>For bacterial conjunctivitis and related infections. Prescription required.</p>
+          </article>
+
+          <article class="product-card" role="listitem">
+            <img src="product-placeholder.jpg" alt="Ear drops" />
+            <h4>Ear Drops for Infections</h4>
+            <p>Gentle formulation for common ear infections; follow practitioner guidance.</p>
+          </article>
+
+          <article class="product-card" role="listitem">
+            <img src="product-placeholder.jpg" alt="OTC ear spray" />
+            <h4>Over-the-counter Relief</h4>
+            <p>Available for itch, dryness, and minor irritation of ear and eye.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="section" aria-labelledby="shop-heading">
+      <div class="container">
+        <h3 id="shop-heading">Order Online</h3>
+        <p>Online ordering is available. This is a placeholder — I can integrate a simple cart and Stripe/Paystack or connect to Shopify depending on your preferences. Tell me which payment provider you'd like to use and any shipping rules.</p>
+        <p><em>Note: Prescription-only medicines should follow your local regulations; we'll add a prescription upload flow if needed.</em></p>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h3 id="contact-heading">Contact & Visit</h3>
+          <p><strong>Address:</strong> Ose Market, Onitsha, Anambra State</p>
+          <p><strong>Phone:</strong> <a href="tel:+2348030955346">+234 803 095 5346</a></p>
+          <p><strong>Email:</strong> <a href="mailto:libertystarbusinesslimited@gmail.com">libertystarbusinesslimited@gmail.com</a></p>
+          <p><strong>Opening hours:</strong> Mon–Sat 9:00–18:00, Sun Closed</p>
+
+          <h4>Find us</h4>
+          <div class="map-wrap" aria-hidden="true">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <form class="contact-form" action="FORM_ENDPOINT" method="POST" aria-label="Contact form">
+          <label for="name">Full name</label>
+          <input id="name" name="name" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="btn primary" type="submit">Send message</button>
+
+          <p class="form-note">By sending this message you agree we may use your details to contact you about your enquiry. Replace this text with your privacy/legal notice.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Liberty Star Eye & Ear Drugs Business Limited — All rights reserved.</p>
+      <p><a href="#privacy">Privacy &amp; Terms</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
